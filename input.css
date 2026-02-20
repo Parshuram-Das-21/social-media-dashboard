@@ -7,7 +7,7 @@ body {
 }
 
 .bg-top-pattern {
-  background-color: hsl(225, 100%, 98%); /* Official Light Top BG Pattern */
+  background-color: hsl(225, 100%, 99%); /* Even lighter top background */
 }
 
 .dark .bg-top-pattern {
