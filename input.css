@@ -5,3 +5,11 @@
 body {
   font-family: 'Inter', sans-serif;
 }
+
+.bg-top-pattern {
+  background-color: hsl(225, 100%, 98%); /* Official Light Top BG Pattern */
+}
+
+.dark .bg-top-pattern {
+  background-color: hsl(232, 19%, 15%); /* Official Dark Top BG Pattern */
+}

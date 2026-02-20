@@ -582,6 +582,10 @@ video {
   top: 0px;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -623,6 +627,10 @@ video {
   height: 1.5rem;
 }
 
+.h-\[240px\] {
+  height: 240px;
+}
+
 .h-\[4px\] {
   height: 4px;
 }
@@ -645,10 +653,6 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-cols-1 {
@@ -703,6 +707,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -711,17 +719,27 @@ video {
   border-radius: 9999px;
 }
 
-.border-t-4 {
-  border-top-width: 4px;
+.rounded-b-\[20px\] {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .border-t {
   border-top-width: 1px;
 }
 
+.border-t-4 {
+  border-top-width: 4px;
+}
+
 .border-facebook {
   --tw-border-opacity: 1;
   border-color: hsl(208 92% 53% / var(--tw-border-opacity, 1));
+}
+
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
 }
 
 .border-twitter {
@@ -732,11 +750,6 @@ video {
 .border-youtube {
   --tw-border-opacity: 1;
   border-color: hsl(348 97% 39% / var(--tw-border-opacity, 1));
-}
-
-.border-gray-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
 }
 
 .bg-gray-100 {
@@ -838,6 +851,16 @@ video {
 
 body {
   font-family: 'Inter', sans-serif;
+}
+
+.bg-top-pattern {
+  background-color: hsl(225, 100%, 98%);
+  /* Official Light Top BG Pattern */
+}
+
+.dark .bg-top-pattern {
+  background-color: hsl(232, 19%, 15%);
+  /* Official Dark Top BG Pattern */
 }
 
 .after\:absolute::after {
@@ -947,12 +970,6 @@ body {
   background-color: rgb(51 58 86 / var(--tw-bg-opacity, 1));
 }
 
-@media (min-width: 640px) {
-  .sm\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-}
-
 @media (min-width: 768px) {
   .md\:w-auto {
     width: auto;
@@ -980,15 +997,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .lg\:mb-12 {
-    margin-bottom: 3rem;
-  }
-
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:gap-5 {
-    gap: 1.25rem;
   }
 }
